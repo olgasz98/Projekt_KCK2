@@ -1,13 +1,13 @@
 #Kaatman Bird
 #Revised 2019-01-11 16:28
 import pygame, random, time, sys
-print("Kaatman Bird")
+print("Karolak Bird")
 pygame.init()
 clock = pygame.time.Clock()
 try:
     pygame.display.set_icon(pygame.image.load("zerotwo.png"))
-    bird = pygame.image.load("kaatman.png")
-    bird_dead = pygame.image.load("kaatmandie.png")
+    bird = pygame.image.load("karolak.png")
+    bird_dead = pygame.image.load("karolakdie.png")
 except:
     print("yo I can't find the game files")
     print("Exiting...")
@@ -15,9 +15,9 @@ except:
     sys.exit()
 window = pygame.display.set_mode((720,720))
 pygame.font.init()
-pygame.display.set_caption('Kaatman Bird')
+pygame.display.set_caption('Karolak Bird')
 font, font2 = pygame.font.SysFont('Arial', 72), pygame.font.SysFont('Arial', 36)
-title = font.render('Kaatman Bird', True, (0,0,0), None)
+title = font.render('Karolak Bird', True, (0,0,0), None)
 caption = font2.render('Press SPACE to Start', True, (0,0,0), None)
 global start, vel, ypos, hscore, p1, p2, tscore, died
 start = False
